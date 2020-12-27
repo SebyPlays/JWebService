@@ -12,8 +12,8 @@ public class FileManager {
     private Logger logger;
     private File file = null;
 
-    public void saveResource(String resourcePath, File resourceOutPath, boolean replace) {
-        this.dataFolder = resourceOutPath;
+    public void saveResource(String resourcePath, File resourceDestPath, boolean replace) {
+        this.dataFolder = resourceDestPath;
         this.classLoader = this.getClass().getClassLoader();
         if (resourcePath != null && !resourcePath.equals("")) {
             resourcePath = resourcePath.replace('\\', '/');
